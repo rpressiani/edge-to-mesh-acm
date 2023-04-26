@@ -4,3 +4,5 @@ metadata:
   name: asm-ingress
   labels:
     istio-injection: enabled
+  annotations:
+    config.kubernetes.io/depends-on: controlplanerevision.mesh.cloud.google.com/asm-managed-rapid
