@@ -1,0 +1,23 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: whoami-ingress
+spec:
+  hosts:
+  - "frontend.endpoints.bcs-customer360-dev.cloud.goog"
+  gateways:
+  - asm-ingress/asm-ingressgateway
+  http:
+  - route:
+    - destination:
+        host: foo
+        port:
+          number: 8080
+        subset: v1
+      weight: 80
+    - destination:
+        host: foo
+        port:
+          number: 8080
+        subset: v2
+      weight: 20
