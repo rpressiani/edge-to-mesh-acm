@@ -87,3 +87,4 @@ kind: ServiceAccount
 metadata:
   name: asm-ingressgateway
   namespace: asm-ingress
+automountServiceAccountToken: true
