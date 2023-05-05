@@ -14,7 +14,7 @@ spec:
         app: foo
         version: v2
     spec:
-      serviceAccountName: asm-ingressgateway
+      automountServiceAccountToken: true
       containers:
       - name: whereami
         image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.19
