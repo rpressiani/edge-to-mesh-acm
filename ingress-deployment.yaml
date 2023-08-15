@@ -44,6 +44,7 @@ apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: asm-ingressgateway
+  namespace: asm-ingress
 spec:
   maxReplicas: 5
   minReplicas: 3
@@ -87,4 +88,4 @@ kind: ServiceAccount
 metadata:
   name: asm-ingressgateway
   namespace: asm-ingress
-automountServiceAccountToken: true
+  
