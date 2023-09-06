@@ -11,14 +11,6 @@ spec:
   http:
   - route:
     - destination:
-        host: foo
+        host: whereami
         port:
           number: 8080
-        subset: v1
-      weight: 80
-    - destination:
-        host: foo
-        port:
-          number: 8080
-        subset: v2
-      weight: 20

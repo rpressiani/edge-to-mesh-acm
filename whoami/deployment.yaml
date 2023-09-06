@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: foo-v2
-  namespace: whoami
+  name: whereami
+  namespace: whereami
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: foo
+      app: whereami
   template:
     metadata:
       labels:
-        app: foo
-        version: v2
+        app: whereami
+        version: v1
     spec:
       automountServiceAccountToken: true
       containers:
