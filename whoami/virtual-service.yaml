@@ -1,8 +1,8 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: whoami-ingress
-  namespace: whoami
+  name: whereami-ingress
+  namespace: whereami
 spec:
   hosts:
   - "frontend.endpoints.united-skyline-393317.cloud.goog"
